@@ -34,8 +34,10 @@ function doMath(operation, a, b) {
     throw new Error('b should be a number');
   }
   // write your code below this comment:
-
-
+var a = document.querySelector("#value1").value;
+var b = document.querySelector("#value2").value;
+var operation = document.querySelector("#operator").value;
+var calculate;
 
 }
 
