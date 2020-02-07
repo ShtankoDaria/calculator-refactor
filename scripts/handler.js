@@ -1,16 +1,16 @@
 function calculateHandler(event) {
   // read & process user input from event
   const form = event.target.form;
-  const value1 = parseInt(form.value1.value);
-  const value2 = parseInt(form.value2.value);
-  const operator = form.operator.value;
+  const valueone = parseInt(form.value1.value);
+  const valuetwo = parseInt(form.value2.value);
+  const operators = form.operator.value;
   // pass user input through core logic
-  const result = doMath(operator, value1, value2)
+  const result = doMath(operators, valueone, valuetwo)
   // render output to DOM for user
-  document.querySelector('result').innerHTML = result;
+  document.getElementById('result').innerHTML = result;
 
   // log user action for developers
-  calculate.log(result)
+  console.log(result)
   // return true for the browser
   return true;
 }
