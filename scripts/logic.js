@@ -22,6 +22,10 @@ const doMathTests = [
 
 // refactor the logic from the calculator tutorial into this function
 function doMath(operation, a, b) {
+var a = document.querySelector("#value1").value;
+var b = document.querySelector("#value2").value;
+var operation = document.querySelector("#operator").value;
+var calculate;
   // these if statements make sure all arguments are the correct type
   // they will throw errors if your handler passes the wrong type arguments
   if (typeof operation !== 'string') {
@@ -34,12 +38,22 @@ function doMath(operation, a, b) {
     throw new Error('b should be a number');
   }
   // write your code below this comment:
-var a = document.querySelector("#value1").value;
-var b = document.querySelector("#value2").value;
-var operation = document.querySelector("#operator").value;
-var calculate;
+
+
+  if (operation == 'add'){
+    calculate = a + b;
+  } else if (operation == 'min'){
+    calculate = a - b;
+  } else if (operation == 'div'){
+    calculate = a / b;
+  } else if (operation == 'mult'){
+    calculate = a * b;
+  }
+
+
+testing(doMath, doMathTests);
 
 }
 
 
-testing(doMath, doMathTests);
+
