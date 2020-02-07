@@ -1,4 +1,4 @@
-# Name of Project
+# Calculator-Refactor
 
 The aim of this assignment was to create the calculator similar to the video from [mmtuts](https://www.youtube.com/watch?v=qQEYAOPWDzk).
 
