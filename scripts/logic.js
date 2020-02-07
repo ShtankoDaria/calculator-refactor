@@ -33,11 +33,18 @@ function doMath(operation, a, b) {
   if (typeof b !== 'number') {
     throw new Error('b should be a number');
   }
-  // write your code below this comment:
-var a = document.querySelector("#value1").value;
-var b = document.querySelector("#value2").value;
-var operation = document.querySelector("#operator").value;
-var calculate;
+  // write your code below this comment
+
+
+if (op == 'add'){
+  calculate = a + b;
+} else if (op == 'min'){
+  calculate = a - b;
+} else if (op == 'div'){
+  calculate = a / b;
+} else if (op == 'mult'){
+  calculate = a * b;
+}
 
 }
 
