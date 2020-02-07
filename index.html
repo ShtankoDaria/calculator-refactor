@@ -6,9 +6,8 @@
   <script src='./dependencies/evaluation.js'></script>
   <!-- this is the testing function for your logic -->
   <script src='./dependencies/testing.js'></script>
-  <script src="scripts/listener.js"></script>
-  <script src="scripts/handler.js"></script>
-  <script src="scripts/logic.js"></script>
+  <script src="scripts/handler.js" defer></script>
+  <script src="scripts/logic.js" defer></script>
 </head>
 
 <body>
@@ -22,9 +21,10 @@
     <option value="div">Divide</option>
     <option value="mul">Multiply</option>
   </select>
-  <button id="calculate" type="button">Calculate</button>
+  <button id="calculate-button" type="button">Calculate</button>
 </form>
 <div id="result"></div>
+<script src="scripts/listener.js" defer></script>
 </body>
 
 </html>
