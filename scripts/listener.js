@@ -1,3 +1,2 @@
 
-document.getElementById('calculate-button')
-  .addEventListener('click', calculateHandler);
+document.getElementById('calculate-button').addEventListener('click', calculateHandler);

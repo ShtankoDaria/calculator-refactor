@@ -35,7 +35,9 @@ var calculate;
   if (typeof b !== 'number') {
     throw new Error('b should be a number');
   }
+
   // write your code below this comment:
+
 
 
   if (operation == 'add'){
