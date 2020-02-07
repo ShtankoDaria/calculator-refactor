@@ -49,7 +49,8 @@ var calculate;
   } else if (operation == 'mult'){
     calculate = a * b;
   }
-
+  
+return calculate;
 
 testing(doMath, doMathTests);
 
