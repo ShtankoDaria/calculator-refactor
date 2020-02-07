@@ -8,8 +8,9 @@ function calculateHandler(event) {
   const result = doMath(operator, value1, value2)
   // render output to DOM for user
   document.querySelector('result').innerHTML = result;
+
   // log user action for developers
-  calculate.log(calculate)
+  calculate.log(result)
   // return true for the browser
   return true;
 }
