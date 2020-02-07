@@ -6,11 +6,14 @@
   <script src='./dependencies/evaluation.js'></script>
   <!-- this is the testing function for your logic -->
   <script src='./dependencies/testing.js'></script>
-
+  <script src="scripts/listener.js"></script>
+  <script src="scripts/handler.js"></script>
+  <script src="scripts/logic.js"></script>
 </head>
 
 <body>
-<form>
+ 
+<form class="calc-form">
   Value 1: <input type="text" id="value1">
   Value 2: <input type="text" id="value2">
   Operator <select id="operator">
@@ -19,9 +22,9 @@
     <option value="div">Divide</option>
     <option value="mul">Multiply</option>
   </select>
-  <button id="calculate-button" type="button" onclick="calc()">Calculate</button>
+  <button id="calculate" type="button">Calculate</button>
 </form>
 <div id="result"></div>
 </body>
-<script src="scripts/listener.js"></script>
+
 </html>
