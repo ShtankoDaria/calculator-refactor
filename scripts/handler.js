@@ -5,7 +5,7 @@ function calculateHandler(event) {
   const value2 = parseInt(form.value2.value);
   const operator = form.operator.value;
   // pass user input through core logic
-  const result = doMath(value1, value2, operator)
+  const result = doMath(operator, value1, value2)
   // render output to DOM for user
   document.querySelector('#result').innerHTML = result;
   // log user action for developers
