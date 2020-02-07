@@ -22,9 +22,7 @@ const doMathTests = [
 
 // refactor the logic from the calculator tutorial into this function
 function doMath(operation, a, b) {
-var a = document.querySelector("#value1").value;
-var b = document.querySelector("#value2").value;
-var operation = document.querySelector("#operator").value;
+
 var calculate;
   // these if statements make sure all arguments are the correct type
   // they will throw errors if your handler passes the wrong type arguments
