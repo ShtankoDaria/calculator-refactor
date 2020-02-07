@@ -7,7 +7,7 @@ function calculateHandler(event) {
   // pass user input through core logic
   const result = doMath(operator, value1, value2)
   // render output to DOM for user
-  document.querySelector('#result').innerHTML = result;
+  document.querySelector('result').innerHTML = result;
   // log user action for developers
   calculate.log(calculate)
   // return true for the browser
