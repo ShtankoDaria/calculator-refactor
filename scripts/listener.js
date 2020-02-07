@@ -1,4 +1,4 @@
 document.getElementById('calculate-button')
-  .addEventListener('click', function handler(event) {
+  .addEventListener('click', function calculateHandler(event) {
     console.log(event);
   });
