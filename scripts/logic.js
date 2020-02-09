@@ -46,7 +46,7 @@ var calculate;
     calculate = a - b;
   } else if (operation == 'div'){
     calculate = a / b;
-  } else if (operation == 'mult'){
+  } else if (operation == 'mul'){
     calculate = a * b;
   } else {
     calculate = 'Invalid Operation';
