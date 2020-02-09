@@ -48,8 +48,7 @@ var calculate;
     calculate = a / b;
   } else if (operation == 'mult'){
     calculate = a * b;
-  } else {
-    calculate = 'Invalid Operation';
+  } 
   
 return calculate;
 
