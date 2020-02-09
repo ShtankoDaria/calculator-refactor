@@ -52,8 +52,8 @@ var calculate;
   
 return calculate;
 
-testing(doMath, doMathTests);
+
 
 }
 
-
+testing(doMath, doMathTests);
