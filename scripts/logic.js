@@ -56,7 +56,7 @@ var calculate;
   } else if (operation == 'mul'){
     calculate = a * b;
   } else {
-    return "invalid operation";
+    return 'invalid operation';
   }
   
 return calculate;
