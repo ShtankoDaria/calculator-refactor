@@ -17,7 +17,14 @@ const doMathTests = [
   { name: 'invalid - 2', args: ['book', 0, 0], expected: 'invalid operation' },
   { name: 'invalid - 3', args: ['minus', 0, 0], expected: 'invalid operation' },
   // write 7 more test cases for doMath
-
+  { name: "add - 4", args: ["add", 1, 1], expected: 2 },
+  { name: "add - 5", args: ["add", -5, 3], expected: -2 },
+  { name: "add - 6", args: ["add", -4, -7], expected: -11 },
+  { name: "min - 4", args: ["min", 2, 0], expected: 2 },
+  { name: "min - 5", args: ["min", 3, 1], expected: 2 },
+  { name: "min - 6", args: ["min", -6, -1], expected: -5 },
+  { name: "div - 4", args: ["div", 6, 2], expected: 3 },
+  { name: "div - 5", args: ["div", 20, 2], expected: 10 }
 ];
 
 // refactor the logic from the calculator tutorial into this function
@@ -48,7 +55,9 @@ var calculate;
     calculate = a / b;
   } else if (operation == 'mul'){
     calculate = a * b;
-  } 
+  } else {
+    return "invalid operation";
+  }
   
 return calculate;
 
